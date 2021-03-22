@@ -40,6 +40,7 @@
   "appid": "wx9dc159ba670351b6",
   "projectname": "music-learn",
   "libVersion": "2.14.1",
+  "cloudfunctionTemplateRoot": "cloudfunctionTemplate",
   "condition": {
     "search": {
       "list": []
