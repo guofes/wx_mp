@@ -1,4 +1,5 @@
 // pages/demo/demo.js
+import regeneratorRuntime from '../../utils/runtime.js'
 Page({
 
   /**
@@ -12,9 +13,22 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    // async await 
+    this.foo()
   },
-
+  async foo () {
+    console.log('foo')
+    let res = await this.timeout()
+    console.log(res)
+  },
+  timeout () {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        console.log(1)
+        resolve('resolve')
+      }, 1000)
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
