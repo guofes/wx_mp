@@ -1,4 +1,4 @@
-<!--components/palylist/palylist.wxml-->
+<!--components/playlist/playlist.wxml-->
 <view class="playlist-contaniner">
   <image src="{{playlist.picUrl}}" class="playlist-img"></image>
   <text class="playlist-playcount">{{_count}}</text>

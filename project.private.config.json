@@ -25,8 +25,9 @@
           "scene": null
         },
         {
-          "name": "pages/playlist/playlist",
+          "name": "playlist",
           "pathName": "pages/playlist/playlist",
+          "query": "",
           "scene": null
         }
       ]
