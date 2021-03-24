@@ -1,0 +1,40 @@
+.musiclist-container{
+  display: flex;
+  padding: 14rpx 20rpx;
+  align-items: center;
+}
+.musiclist-index{
+  color: #888;
+  font-size: 34rpx;
+  width: 100rpx;
+}
+.musiclist-index-img {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 5rpx;
+}
+.musiclist-info{
+  flex-grow: 1;
+  width: 0;
+}
+.musiclist-name{
+  font-size: 34rpx;
+  color: #000;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+.musiclist-signer{
+  font-size: 30rpx;
+  color: #333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+.playing view, .playing text{
+  color: #d43c33;
+}

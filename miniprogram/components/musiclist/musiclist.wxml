@@ -1,0 +1,16 @@
+<block wx:for="{{musiclist}}" wx:key="id">
+  <view class="musiclist-container {{item.id === playingId ? 'playing' : ''}}" bind:tap="onSelect" data-musicid="{{item.id}}" data-index="{{index}}">
+    <view class="musiclist-index">
+      <image src="{{item.al.picUrl}}" class="musiclist-index-img"></image>
+      </view>
+    <view class="musiclist-info">
+      <view class="musiclist-name">
+        {{item.name}}
+        <!-- <text class="musiclist-alia" wx:if="item.alia.length>0">
+          {{item.alia[0]}}
+        </text> -->
+      </view>
+      <view class="musiclist-signer">{{item.ar[0].name}} - {{item.al.name}}</view>
+    </view>
+  </view>
+</block>

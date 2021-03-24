@@ -1,5 +1,5 @@
 // pages/playlist/playlist.js
-const MAX_LIMIT = 50
+const MAX_LIMIT = 15
 Page({
 
   /**
@@ -82,7 +82,8 @@ Page({
       name: 'music',
       data: {
         start: this.data.playlist.length,
-        count: MAX_LIMIT
+        count: MAX_LIMIT,
+        $url: 'playlist',
       }
     }).then( res => {
       console.log(res)

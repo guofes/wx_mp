@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "x-misiclist": "/components/musiclist/musiclist"
+  }
+}

@@ -44,7 +44,7 @@ exports.main = async (event, context) => {
   const newData = []
   playlist.map(item1 => {
     list.data.map(item2 => {
-      if (item1._id !== item2.id) {
+      if (item1.id !== item2.id) {
         newData.push(item1)
       }
     })
