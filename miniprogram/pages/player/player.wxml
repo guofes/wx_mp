@@ -1,12 +1,12 @@
 <view class="play_container" style="background-image: url({{picUrl}})"></view>
 <view class="player_mask"></view>
 <view class="player_info">
-  <view class="player_disc">
-    <image src="{{picUrl}}" class="player_disc_img"></image>
+  <view class="player_disc {{isPlaying ? 'play' : ''}}">
+    <image src="{{picUrl}}" class="player_disc_img rotation {{isPlaying ? '' : 'rotation_paused'}}"></image>
   </view>
 </view>
 <view class="control">
-  <text class="iconfont icon-shangyishou"></text>
-  <text class="iconfont icon-bofang"></text>
-  <text class="iconfont icon-xiayishou"></text>
+  <text class="iconfont icon-shangyishou" bind:tap="onPrev"></text>
+  <text class="iconfont {{isPlaying ? 'icon-step' : 'icon-bofang'}}"  bind:tap="togglePlaying"></text>
+  <text class="iconfont icon-xiayishou" bind:tap="onNext"></text>
 </view>

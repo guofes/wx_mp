@@ -13,6 +13,13 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    if (wx.getStorageSync('musicList')) { // 有问题的，测试用
+      this.setData({
+        musiclist: wx.getStorageSync('musicList'),
+        listInfo: wx.getStorageSync('listInfo')
+      })
+      return
+    }
     console.log(options)
     wx.showLoading({
       title: '加载中',
@@ -40,6 +47,7 @@ Page({
 
   _setMusicList () {
     wx.setStorageSync('musicList', this.data.musiclist)
+    wx.setStorageSync('listInfo', this.data.listInfo) // 有问题的缓存
   },
   /**
    * 生命周期函数--监听页面初次渲染完成 
